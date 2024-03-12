@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Event</title>
+</head>
+<body>
+   <div id="container">
+    <h1>Inline Event</h1>
+    <button onclick="alert('welcome')">greeting</button>
+    <button ondblclick="alert('welcome to my js tutorial')">greeting again</button>
+    <button onmouseleave="alert('welcome again')">greeting again</button>
+
+    <h1>Dom Event Handler</h1>
+    <button id="btn1">greeting</button>
+    <button id="btn2">greeting again</button>
+
+
+
+    <h1>addEventListener Event hander</h1>
+    <button id="btn3">greeting</button>
+    <button id="btn4">greeting again</button>
+   </div>
+
+    <script>
+        document.getElementById("btn1").onclick = () =>{
+            alert("Hello, welcome to Namaste JS Course");
+        }
+
+        document.getElementById("btn2").onmousemove = () =>{
+            alert("Hello, welcome to Namaste React Course");
+        }
+
+        document.getElementById("btn3").addEventListener('click', () =>{
+            alert("Hello, welcome to Namaste Nodejs Course");
+        })
+
+        document.getElementById("btn4").addEventListener('dblclick', () =>{
+            alert("Hello, welcome to Namaste PHP Course");
+        })
+
+
+
+    </script>
+    
+</body>
+</html>
